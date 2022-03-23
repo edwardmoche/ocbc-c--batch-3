@@ -1,26 +1,36 @@
 using System;
+using System.Collections.Generic;
+using System.Text;
 
-public class numtochar{
-    static void Main(){  
-            int[,] n ={
-                {1, 1},
-                {2, 4},
-                {3, 9},
-                {4, 16},
-                {5, 25},
-                {6, 36},
-                {7, 49},
-                {8, 64},
-                {9, 81},
-                {10, 100}
-            };
-                int i, j;
-
-                for (i=0; i< 10; i++){
-                    for(j=0; j<2; j++){
-                        Console.Write(n[" ",j] + " ");
-                    }
-                    Console.WriteLine();
-                }
-    }
-}
+   class digtoword {
+      static void Main(string[] args) {
+         int val, next, num_digits;
+         int[] a = new int[10];
+         string[] digits_words = {
+            "zero",
+            "one",
+            "two",
+            "three",
+            "four",
+            "five",
+            "six",
+            "seven",
+            "eight",
+            "nine"
+         };
+         Console.Write("Enter the number: ");
+         val = int.Parse(Console.ReadLine());
+         next = 0;
+         num_digits = 0;
+         do {
+            next = val % 10;
+            a[num_digits] = next;
+            num_digits++;
+            val = val / 10;
+         } while (val > 0);
+         num_digits--;
+         for (; num_digits >= 0; num_digits--)
+         Console.Write(digits_words[a[num_digits]] + " ");
+         Console.ReadLine();
+      }
+   }

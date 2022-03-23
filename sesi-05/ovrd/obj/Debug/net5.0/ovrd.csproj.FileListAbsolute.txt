@@ -1,0 +1,16 @@
+D:\Edward Program\C#\sesi-05\ovrd\obj\Debug\net5.0\ovrd.csproj.AssemblyReference.cache
+D:\Edward Program\C#\sesi-05\ovrd\obj\Debug\net5.0\ovrd.GeneratedMSBuildEditorConfig.editorconfig
+D:\Edward Program\C#\sesi-05\ovrd\obj\Debug\net5.0\ovrd.AssemblyInfoInputs.cache
+D:\Edward Program\C#\sesi-05\ovrd\obj\Debug\net5.0\ovrd.AssemblyInfo.cs
+D:\Edward Program\C#\sesi-05\ovrd\obj\Debug\net5.0\ovrd.csproj.CoreCompileInputs.cache
+D:\Edward Program\C#\sesi-05\ovrd\bin\Debug\net5.0\ovrd.exe
+D:\Edward Program\C#\sesi-05\ovrd\bin\Debug\net5.0\ovrd.deps.json
+D:\Edward Program\C#\sesi-05\ovrd\bin\Debug\net5.0\ovrd.runtimeconfig.json
+D:\Edward Program\C#\sesi-05\ovrd\bin\Debug\net5.0\ovrd.runtimeconfig.dev.json
+D:\Edward Program\C#\sesi-05\ovrd\bin\Debug\net5.0\ovrd.dll
+D:\Edward Program\C#\sesi-05\ovrd\bin\Debug\net5.0\ref\ovrd.dll
+D:\Edward Program\C#\sesi-05\ovrd\bin\Debug\net5.0\ovrd.pdb
+D:\Edward Program\C#\sesi-05\ovrd\obj\Debug\net5.0\ovrd.dll
+D:\Edward Program\C#\sesi-05\ovrd\obj\Debug\net5.0\ref\ovrd.dll
+D:\Edward Program\C#\sesi-05\ovrd\obj\Debug\net5.0\ovrd.pdb
+D:\Edward Program\C#\sesi-05\ovrd\obj\Debug\net5.0\ovrd.genruntimeconfig.cache

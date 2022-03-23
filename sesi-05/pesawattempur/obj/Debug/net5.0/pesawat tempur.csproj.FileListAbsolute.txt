@@ -1,0 +1,21 @@
+D:\Edward Program\C#\sesi-05\pesawat tempur\obj\Debug\net5.0\pesawat tempur.csproj.AssemblyReference.cache
+D:\Edward Program\C#\sesi-05\pesawat tempur\obj\Debug\net5.0\pesawat tempur.GeneratedMSBuildEditorConfig.editorconfig
+D:\Edward Program\C#\sesi-05\pesawat tempur\obj\Debug\net5.0\pesawat tempur.AssemblyInfoInputs.cache
+D:\Edward Program\C#\sesi-05\pesawat tempur\obj\Debug\net5.0\pesawat tempur.AssemblyInfo.cs
+D:\Edward Program\C#\sesi-05\pesawat tempur\obj\Debug\net5.0\pesawat tempur.csproj.CoreCompileInputs.cache
+D:\Edward Program\C#\sesi-05\pesawattempur\bin\Debug\net5.0\pesawat tempur.exe
+D:\Edward Program\C#\sesi-05\pesawattempur\bin\Debug\net5.0\pesawat tempur.deps.json
+D:\Edward Program\C#\sesi-05\pesawattempur\bin\Debug\net5.0\pesawat tempur.runtimeconfig.json
+D:\Edward Program\C#\sesi-05\pesawattempur\bin\Debug\net5.0\pesawat tempur.runtimeconfig.dev.json
+D:\Edward Program\C#\sesi-05\pesawattempur\bin\Debug\net5.0\pesawat tempur.dll
+D:\Edward Program\C#\sesi-05\pesawattempur\bin\Debug\net5.0\ref\pesawat tempur.dll
+D:\Edward Program\C#\sesi-05\pesawattempur\bin\Debug\net5.0\pesawat tempur.pdb
+D:\Edward Program\C#\sesi-05\pesawattempur\obj\Debug\net5.0\pesawat tempur.csproj.AssemblyReference.cache
+D:\Edward Program\C#\sesi-05\pesawattempur\obj\Debug\net5.0\pesawat tempur.GeneratedMSBuildEditorConfig.editorconfig
+D:\Edward Program\C#\sesi-05\pesawattempur\obj\Debug\net5.0\pesawat tempur.AssemblyInfoInputs.cache
+D:\Edward Program\C#\sesi-05\pesawattempur\obj\Debug\net5.0\pesawat tempur.AssemblyInfo.cs
+D:\Edward Program\C#\sesi-05\pesawattempur\obj\Debug\net5.0\pesawat tempur.csproj.CoreCompileInputs.cache
+D:\Edward Program\C#\sesi-05\pesawattempur\obj\Debug\net5.0\pesawat tempur.dll
+D:\Edward Program\C#\sesi-05\pesawattempur\obj\Debug\net5.0\ref\pesawat tempur.dll
+D:\Edward Program\C#\sesi-05\pesawattempur\obj\Debug\net5.0\pesawat tempur.pdb
+D:\Edward Program\C#\sesi-05\pesawattempur\obj\Debug\net5.0\pesawat tempur.genruntimeconfig.cache

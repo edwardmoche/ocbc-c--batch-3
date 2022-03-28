@@ -1,0 +1,282 @@
+program
+--------------------------
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Kantor_WebAPI
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            CreateHostBuilder(args).Build().Run();
+        }
+
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
+    }
+}
+----------------------------------------------------------------------------
+startup
+--------------------
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Kantor_WebAPI
+{
+    public class Startup
+    {
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+
+        public IConfiguration Configuration { get; }
+
+        // This method gets called by the runtime. Use this method to add services to the container.
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddControllers();
+            services.Add(new ServiceDescriptor(typeof(Models.EmployeeContext), new Models.EmployeeContext(Configuration.GetConnectionString("DefaultConnection"))));
+        }
+
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Error");
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseHsts();
+            }
+
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
+        }
+    }
+}
+
+---------------------------
+employcontext
+----------------------------------------------
+using MySql.Data.MySqlClient;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Kantor_WebAPI.Models
+{
+    public class EmployeeContext
+    {
+        public string ConnectionString { get; set; }
+
+        public EmployeeContext(string connectionString)
+        {
+            this.ConnectionString = connectionString;
+        }
+
+        private MySqlConnection GetConnection()
+        {
+            return new MySqlConnection(ConnectionString);
+        }
+
+        public List<EmployeeItem> GetAllEmployee()
+        {
+            List<EmployeeItem> list = new List<EmployeeItem>();
+
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand("select * from employee", conn);
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        list.Add(new EmployeeItem()
+                        {
+                            id = reader.GetInt32("id"),
+                            nama = reader.GetString("nama"),
+                            jenisKelamin = reader.GetString("jenis_kelamin"),
+                            alamat = reader.GetString("alamat")
+                        });
+                    }
+                }
+            }
+            return list;
+        }
+
+        public List<EmployeeItem> GetEmployee(string id)
+        {
+            List<EmployeeItem> list = new List<EmployeeItem>();
+
+            using (MySqlConnection conn = GetConnection())
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand("select * from employee where id =@id", conn);
+                cmd.Parameters.AddWithValue("@id", id);
+
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        list.Add(new EmployeeItem()
+                        {
+                            id = reader.GetInt32("id"),
+                            nama = reader.GetString("nama"),
+                            jenisKelamin = reader.GetString("jenis_kelamin"),
+                            alamat = reader.GetString("alamat")
+                        });
+                    }
+                }
+            }
+            return list;
+        }
+    }
+}
+----------------------------------
+emp control
+------------------------------------------
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
+using Kantor_WebAPI.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+// for more info
+
+namespace Kantor_WebAPI.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class EmployeeController : Controller
+    {
+        private EmployeeContext _context;
+        
+        public EmployeeController(EmployeeContext context)
+        {
+            this._context = context;
+        }
+
+        // GET user
+        [HttpGet(Name = "Get Employee")]
+        public ActionResult<IEnumerable<EmployeeItem>> GetEmployeeItems()
+        {
+            _context = HttpContext.RequestServices.GetService(typeof(EmployeeContext)) as EmployeeContext;
+            //return new string[]
+            return _context.GetAllEmployee();
+        }
+
+        // GET user id
+        [HttpGet("{id}", Name = "Get Employee where ")]
+        public ActionResult<IEnumerable<EmployeeItem>> GetEmployeeItem(string id)
+        {
+            _context = HttpContext.RequestServices.GetService(typeof(EmployeeContext)) as EmployeeContext;
+            return _context.GetEmployee(id);
+        }
+    }
+}
+----------------
+appsettingn
+--------------------
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Port=3306;Database=kantor;Uid=root;Pwd=;SSL Mode=None;"
+  },
+  "https_port": 443,
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*"
+}
+--------------
+launchsetti
+_______________________
+{
+  "$schema":  "https://json.schemastore.org/launchsettings.json"
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:7345",
+      "sslPort": 44309
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "api/employee",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Kantor_WebAPI": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "launchBrowser": true,
+      "launchUrl": "api/employee",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
+-------------
+employeeitem
+--------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Kantor_WebAPI.Models
+{
+    public class EmployeeItem
+    {
+        private Models.EmployeeContext context;
+
+        public int id { get; set; }
+        public string nama { get; set; }
+        public string jenisKelamin { get; set; }
+        public string alamat { get; set; }
+    }
+}

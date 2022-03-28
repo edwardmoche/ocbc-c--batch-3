@@ -1,0 +1,15 @@
+dotnet tool install --global dotnet-ef
+dotnet add package NuGet.CommandLine.XPlat --version 5.11.0
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 5.0.11
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 5.0.11
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 5.0.11
+
+langkah-langkah membuat best practice sesi 10
+
+1. install dotnet sdk 5
+2. install tool (dbeaver, postman, dll)
+3. create project from vscode
+4. generate melalui terminal (aplikasi .net core web api)
+ > sintak terminal
+ 1. dotnet new webapi
+ 2. dotnet add package namalibrary

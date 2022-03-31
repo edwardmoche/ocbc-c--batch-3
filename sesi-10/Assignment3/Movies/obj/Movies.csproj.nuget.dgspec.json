@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Edward Program\\C#\\sesi-10\\Assignment3\\movies\\Movies.csproj": {}
+    "D:\\Edward Program\\C#\\sesi-10\\Assignment3\\Movies\\Movies.csproj": {}
   },
   "projects": {
-    "D:\\Edward Program\\C#\\sesi-10\\Assignment3\\movies\\Movies.csproj": {
+    "D:\\Edward Program\\C#\\sesi-10\\Assignment3\\Movies\\Movies.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Edward Program\\C#\\sesi-10\\Assignment3\\movies\\Movies.csproj",
+        "projectUniqueName": "D:\\Edward Program\\C#\\sesi-10\\Assignment3\\Movies\\Movies.csproj",
         "projectName": "Movies",
-        "projectPath": "D:\\Edward Program\\C#\\sesi-10\\Assignment3\\movies\\Movies.csproj",
+        "projectPath": "D:\\Edward Program\\C#\\sesi-10\\Assignment3\\Movies\\Movies.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Edward Program\\C#\\sesi-10\\Assignment3\\movies\\obj\\",
+        "outputPath": "D:\\Edward Program\\C#\\sesi-10\\Assignment3\\Movies\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

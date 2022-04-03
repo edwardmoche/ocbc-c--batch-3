@@ -1,0 +1,13 @@
+Nama		: Mohamad Edward Moche
+Kode Peserta 	: FSDO003ONL006
+Sesi		: 10
+Link Git	: https://github.com/edwardmoche/ocbc-c--batch-3
+
+
+untuk penggunaan aplikasi yang diinginkan (todoapp, sqlite, testrun, dan jwt) jika ingin menjalankan salah satu pertama-tama rename nama folder menjadi "TodoApp", dikarenakan dari ke 4 program tersebut menggunakan namespace yang sama
+
+selanjutnya hanya tinggal di run saja menggunakan "dotnet run", lalu buka "localhost:5001/Swagger/index.html" atau "http://localhost:5000/api/Todo" jika melalui postman
+
+didalamnya akan terdapat fitur crud (sqlite) dan authorization pada jwt
+
+untuk penggunaan jwt hanya dapat dibuka melalui postman, dikarenakan disana kita dapat membuat perintah authorize agar data dapat diakses

@@ -1,3 +1,0 @@
-untuk penggunaan yang local, pisahkan dengan yang online
-lalu tinggal rename folder dengan menghilankan "local"
-dari nama folder

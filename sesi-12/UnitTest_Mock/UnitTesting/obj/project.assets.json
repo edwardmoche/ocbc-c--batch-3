@@ -9586,11 +9586,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Edward Program\\C#\\sesi-12\\UnitTest_Mock\\UnitTesting\\UnitTesting.csproj",
+      "projectUniqueName": "D:\\Edward Program\\Kantor\\C#\\sesi-12\\UnitTest_Mock\\UnitTesting\\UnitTesting.csproj",
       "projectName": "UnitTesting",
-      "projectPath": "D:\\Edward Program\\C#\\sesi-12\\UnitTest_Mock\\UnitTesting\\UnitTesting.csproj",
+      "projectPath": "D:\\Edward Program\\Kantor\\C#\\sesi-12\\UnitTest_Mock\\UnitTesting\\UnitTesting.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\Edward Program\\C#\\sesi-12\\UnitTest_Mock\\UnitTesting\\obj\\",
+      "outputPath": "D:\\Edward Program\\Kantor\\C#\\sesi-12\\UnitTest_Mock\\UnitTesting\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -9610,8 +9610,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Edward Program\\C#\\sesi-12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj": {
-              "projectPath": "D:\\Edward Program\\C#\\sesi-12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj"
+            "D:\\Edward Program\\Kantor\\C#\\sesi-12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj": {
+              "projectPath": "D:\\Edward Program\\Kantor\\C#\\sesi-12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj"
             }
           }
         }

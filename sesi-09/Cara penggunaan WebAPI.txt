@@ -1,0 +1,14 @@
+Nama		: Mohamad Edward Moche
+Kode Peserta 	: FSDO003ONL006
+Sesi		: 9
+Link Git	: https://github.com/edwardmoche/ocbc-c--batch-3
+
+
+1. membuat database kantor
+2. membuat table employee. field (id,nama,jenis_kelamin, alamat)
+isi 5 record
+3. buka visual studio
+4. download postman (https://www.postman.com/)
+5. untuk membuka via swagger, buka melalui browser stelah di run menuju ke link "https://localhost:44342/api/Employee"
+6. lalu disana kita bisa melihat data dengan menggunakan get, baik untuk melihat isi tabel employee, maupun tabel weather
+7. untuk penggunaan postman, masukkan link kedalam kolom yang tersedia setelah kita "add request" lalu tekan lambang sent

@@ -6938,11 +6938,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Edward Program\\C#\\sesi-12\\UnitTest_Mock\\unittest_mock\\UnitTest_Mock.csproj",
+      "projectUniqueName": "D:\\Edward Program\\Kantor\\C#\\sesi-12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj",
       "projectName": "UnitTest_Mock",
-      "projectPath": "D:\\Edward Program\\C#\\sesi-12\\UnitTest_Mock\\unittest_mock\\UnitTest_Mock.csproj",
+      "projectPath": "D:\\Edward Program\\Kantor\\C#\\sesi-12\\UnitTest_Mock\\UnitTest_Mock\\UnitTest_Mock.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\Edward Program\\C#\\sesi-12\\UnitTest_Mock\\unittest_mock\\obj\\",
+      "outputPath": "D:\\Edward Program\\Kantor\\C#\\sesi-12\\UnitTest_Mock\\UnitTest_Mock\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

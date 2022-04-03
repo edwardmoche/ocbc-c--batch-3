@@ -5699,11 +5699,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Edward Program\\C#\\sesi-11\\TodoApp\\TodoApp.csproj",
+      "projectUniqueName": "D:\\Edward Program\\Kantor\\C#\\sesi-11\\TodoApp\\TodoApp.csproj",
       "projectName": "TodoApp",
-      "projectPath": "D:\\Edward Program\\C#\\sesi-11\\TodoApp\\TodoApp.csproj",
+      "projectPath": "D:\\Edward Program\\Kantor\\C#\\sesi-11\\TodoApp\\TodoApp.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\Edward Program\\C#\\sesi-11\\TodoApp\\obj\\",
+      "outputPath": "D:\\Edward Program\\Kantor\\C#\\sesi-11\\TodoApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,5 +1,0 @@
-1. membuat database kantor
-2. membuat table employee. field (id,nama,jenis_kelamin, alamat)
-isi 5 record
-3. buka vs 
-4. download postman (https://www.postman.com/)
